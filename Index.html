@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da memoria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0a3c2f;
+            color: white;
+        }
+
+        h1 {
+            font-size: 4rem;
+            padding: 1rem;
+        }
+
+        h2 {
+            padding: 1rem;
+            font-size: 3rem;
+        }
+
+        span {
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem 4rem 1rem 4rem;
+        }
+
+        a {
+            padding: 15px 20px;
+            margin: 1rem 2rem;
+            text-decoration: none;
+            color: #267c65;
+            background-color: #fff;
+            border: none;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            cursor: pointer;
+        }
+
+        a:focus {
+            color: #fff;
+            background-color: #267c65;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Regras do jogo da memoria</h1>
+    <h2>Regras do Jogo da Memória:</h2>
+    <p><span>Objetivo:</span> Encontrar todos os pares de cartas viradas para cima, acumulando pontos, até que todos os
+        pares sejam encontrados.</p>
+    <p><span>Pontuação:</span> Acertou: +10 pontos para cada par encontrado.</p>
+    <p><span>Errou:</span> -5 pontos para cada par incorreto.</p>
+    <h2>Como Jogar:</h2>
+    <p>As cartas são embaralhadas e viradas para baixo.</p>
+    <p>O jogador vira duas cartas por vez.</p>
+    <p>Se as cartas forem iguais, o jogador as recolhe e marca +10 pontos.</p>
+    <p>Se as cartas forem diferentes, elas são viradas para baixo novamente e o jogador perde 5 pontos.</p>
+    <p>O jogo termina quando todos os pares forem encontrados.</p>
+    <a href="Jogo.html">Começar a jogar</a>
+</body>
+
+</html>

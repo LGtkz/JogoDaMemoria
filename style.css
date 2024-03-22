@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0a3c2f;
+}
+
+.containerPrincipal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #0d614b;
+    padding: 40px 60px;
+}
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 6px;
+}
+
+.reseta{
+    padding: 15px 20px;
+    color: #267c65;
+    background-color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.reseta:focus{
+    color: #fff;
+    background-color: #267c65;
+}
+
+.jogo{
+    width: 430px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    background: #fff;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+
+.card::after{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background-color: #209d78;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.boxOpen::after, .boxMath::after{
+    transform: rotateY(180deg);
+
+}
